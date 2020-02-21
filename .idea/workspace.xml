@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d1c5b73-2d4d-4aed-b6b0-1ee66bd44920" name="Default Changelist" comment="" />
+    <list default="true" id="6d1c5b73-2d4d-4aed-b6b0-1ee66bd44920" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music_commands.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic_commands.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_events.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic_events.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/song.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/song.mp3" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +22,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/bot.py" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -25,7 +36,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -100,6 +113,7 @@
       <workItem from="1582076068408" duration="6088000" />
       <workItem from="1582175547225" duration="7384000" />
       <workItem from="1582315397288" duration="1327000" />
+      <workItem from="1582317319784" duration="2584000" />
     </task>
     <servers />
   </component>
@@ -107,6 +121,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="617" y="214" key="#Notifications" timestamp="1582319565799">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="617" y="214" key="#Notifications/0.0.2048.1112/2560.149.1920.1040@0.0.2048.1112" timestamp="1582319565799" />
     <state x="479" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582176464339">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -123,25 +141,25 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="804" y="297" key="FileChooserDialogImpl/0.0.2048.1112/2560.149.1920.1040@0.0.2048.1112" timestamp="1582316110095" />
-    <state width="2005" height="305" key="GridCell.Tab.0.bottom" timestamp="1582183032666">
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom" timestamp="1582319669371">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.149.1920.1040@0.0.2048.1112" timestamp="1582183032666" />
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.149.1920.1040@0.0.2048.1112" timestamp="1582319669371" />
     <state width="2005" height="305" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.162.1920.1040@0.0.2048.1112" timestamp="1582091862529" />
-    <state width="2005" height="305" key="GridCell.Tab.0.center" timestamp="1582183032666">
+    <state width="2005" height="305" key="GridCell.Tab.0.center" timestamp="1582319669371">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.center/0.0.2048.1112/2560.149.1920.1040@0.0.2048.1112" timestamp="1582183032666" />
+    <state width="2005" height="305" key="GridCell.Tab.0.center/0.0.2048.1112/2560.149.1920.1040@0.0.2048.1112" timestamp="1582319669371" />
     <state width="2005" height="305" key="GridCell.Tab.0.center/0.0.2048.1112/2560.162.1920.1040@0.0.2048.1112" timestamp="1582091862529" />
-    <state width="2005" height="305" key="GridCell.Tab.0.left" timestamp="1582183032666">
+    <state width="2005" height="305" key="GridCell.Tab.0.left" timestamp="1582319669371">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.left/0.0.2048.1112/2560.149.1920.1040@0.0.2048.1112" timestamp="1582183032666" />
+    <state width="2005" height="305" key="GridCell.Tab.0.left/0.0.2048.1112/2560.149.1920.1040@0.0.2048.1112" timestamp="1582319669371" />
     <state width="2005" height="305" key="GridCell.Tab.0.left/0.0.2048.1112/2560.162.1920.1040@0.0.2048.1112" timestamp="1582091862529" />
-    <state width="2005" height="305" key="GridCell.Tab.0.right" timestamp="1582183032666">
+    <state width="2005" height="305" key="GridCell.Tab.0.right" timestamp="1582319669371">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.right/0.0.2048.1112/2560.149.1920.1040@0.0.2048.1112" timestamp="1582183032666" />
+    <state width="2005" height="305" key="GridCell.Tab.0.right/0.0.2048.1112/2560.149.1920.1040@0.0.2048.1112" timestamp="1582319669371" />
     <state width="2005" height="305" key="GridCell.Tab.0.right/0.0.2048.1112/2560.162.1920.1040@0.0.2048.1112" timestamp="1582091862529" />
     <state width="2005" height="376" key="GridCell.Tab.1.bottom" timestamp="1581836519140">
       <screen x="0" y="0" width="2048" height="1112" />
@@ -163,6 +181,10 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="533" y="198" key="SettingsEditor/0.0.2048.1112/2560.149.1920.1040@0.0.2048.1112" timestamp="1582177396253" />
+    <state x="834" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582319918493">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="834" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2048.1112/2560.149.1920.1040@0.0.2048.1112" timestamp="1582319918493" />
     <state x="586" y="291" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1581731184878">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -174,6 +196,6 @@
     <state x="687" y="243" key="search.everywhere.popup/0.0.2048.1112/2560.162.1920.1040@0.0.2048.1112" timestamp="1581726152998" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/discord_bot$bot.coverage" NAME="bot Coverage Results" MODIFIED="1582183000815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/discord_bot$bot.coverage" NAME="bot Coverage Results" MODIFIED="1582319427903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

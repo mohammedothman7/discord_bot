@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6d1c5b73-2d4d-4aed-b6b0-1ee66bd44920" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/bot.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="1XoKmFUzCcvtXMnqKK9rDBWMKbs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Moe\PycharmProjects\discord_bot" />
+      <recent name="C:\Users\Moe\PycharmProjects\discord_bot\cogs" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="bot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="discord_bot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Moe\PycharmProjects\discord_bot\bot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.bot" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6d1c5b73-2d4d-4aed-b6b0-1ee66bd44920" name="Default Changelist" comment="" />
+      <created>1581707163277</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581707163277</updated>
+      <workItem from="1581707174344" duration="17345000" />
+      <workItem from="1581732226169" duration="6185000" />
+      <workItem from="1581792830427" duration="13617000" />
+      <workItem from="1581824691004" duration="10306000" />
+      <workItem from="1581919914660" duration="2472000" />
+      <workItem from="1582076068408" duration="6088000" />
+      <workItem from="1582175547225" duration="7384000" />
+      <workItem from="1582315397288" duration="1327000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="479" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582176464339">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="479" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112/2560.149.1920.1040@0.0.2048.1112" timestamp="1582176464339" />
+    <state x="792" y="358" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581831013269">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="792" y="358" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2048.1112/2560.162.1920.1040@0.0.2048.1112" timestamp="1581831013269" />
+    <state x="755" y="302" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581825530284">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="755" y="302" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1112/2560.162.1920.1040@0.0.2048.1112" timestamp="1581825530284" />
+    <state x="804" y="297" key="FileChooserDialogImpl" timestamp="1582316110095">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="804" y="297" key="FileChooserDialogImpl/0.0.2048.1112/2560.149.1920.1040@0.0.2048.1112" timestamp="1582316110095" />
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom" timestamp="1582183032666">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.149.1920.1040@0.0.2048.1112" timestamp="1582183032666" />
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.162.1920.1040@0.0.2048.1112" timestamp="1582091862529" />
+    <state width="2005" height="305" key="GridCell.Tab.0.center" timestamp="1582183032666">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="305" key="GridCell.Tab.0.center/0.0.2048.1112/2560.149.1920.1040@0.0.2048.1112" timestamp="1582183032666" />
+    <state width="2005" height="305" key="GridCell.Tab.0.center/0.0.2048.1112/2560.162.1920.1040@0.0.2048.1112" timestamp="1582091862529" />
+    <state width="2005" height="305" key="GridCell.Tab.0.left" timestamp="1582183032666">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="305" key="GridCell.Tab.0.left/0.0.2048.1112/2560.149.1920.1040@0.0.2048.1112" timestamp="1582183032666" />
+    <state width="2005" height="305" key="GridCell.Tab.0.left/0.0.2048.1112/2560.162.1920.1040@0.0.2048.1112" timestamp="1582091862529" />
+    <state width="2005" height="305" key="GridCell.Tab.0.right" timestamp="1582183032666">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="305" key="GridCell.Tab.0.right/0.0.2048.1112/2560.149.1920.1040@0.0.2048.1112" timestamp="1582183032666" />
+    <state width="2005" height="305" key="GridCell.Tab.0.right/0.0.2048.1112/2560.162.1920.1040@0.0.2048.1112" timestamp="1582091862529" />
+    <state width="2005" height="376" key="GridCell.Tab.1.bottom" timestamp="1581836519140">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="376" key="GridCell.Tab.1.bottom/0.0.2048.1112/2560.162.1920.1040@0.0.2048.1112" timestamp="1581836519140" />
+    <state width="2005" height="376" key="GridCell.Tab.1.center" timestamp="1581836519140">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="376" key="GridCell.Tab.1.center/0.0.2048.1112/2560.162.1920.1040@0.0.2048.1112" timestamp="1581836519140" />
+    <state width="2005" height="376" key="GridCell.Tab.1.left" timestamp="1581836519140">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="376" key="GridCell.Tab.1.left/0.0.2048.1112/2560.162.1920.1040@0.0.2048.1112" timestamp="1581836519140" />
+    <state width="2005" height="376" key="GridCell.Tab.1.right" timestamp="1581836519140">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="376" key="GridCell.Tab.1.right/0.0.2048.1112/2560.162.1920.1040@0.0.2048.1112" timestamp="1581836519140" />
+    <state x="533" y="198" key="SettingsEditor" timestamp="1582177396253">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="533" y="198" key="SettingsEditor/0.0.2048.1112/2560.149.1920.1040@0.0.2048.1112" timestamp="1582177396253" />
+    <state x="586" y="291" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1581731184878">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="586" y="291" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.2048.1112/2560.162.1920.1040@0.0.2048.1112" timestamp="1581731184878" />
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1582177108747">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112/2560.149.1920.1040@0.0.2048.1112" timestamp="1582177108747" />
+    <state x="687" y="243" key="search.everywhere.popup/0.0.2048.1112/2560.162.1920.1040@0.0.2048.1112" timestamp="1581726152998" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/discord_bot$bot.coverage" NAME="bot Coverage Results" MODIFIED="1582183000815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

@@ -47,7 +47,6 @@ class MusicCommands(commands.Cog):
 
     @commands.command()
     async def play(self, ctx, url: str):
-        print(f"Bot connected? {is_bot_connected_to_voice}")
         if not is_bot_connected_to_voice:
             await MusicCommands.join(ctx)
 
@@ -96,10 +95,8 @@ class MusicCommands(commands.Cog):
                 queues.clear()
                 print("Removed old song file")
         except PermissionError:
-            await MusicCommands.queue(ctx, url)
+            await MusicCommands.queue(self, ctx, url) # If song is being played then automatically add the new requested song to the queue
             print("Trying to delete song file, but it's being played")
-            await ctx.send("Music playing, use -queue to add it to the playlist.")
-
             return
 
         Queue_infile = os.path.isdir("./Queue")
@@ -219,7 +216,7 @@ class MusicCommands(commands.Cog):
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             print("Downloading audio now\n")
             ydl.download([url])
-        await ctx.send(f"Added song. {q_num} in queue.")
+        await ctx.send(f"Song added. {q_num} in queue.")
 
         print("Song added to queue\n")
 

@@ -8,14 +8,16 @@ from discord.utils import get
 import youtube_dl
 
 queues = {}
-global is_bot_connected_to_voice
+
 
 class MusicCommands(commands.Cog):
-
+    def __init__(self, bot):
+        self.bot = bot
 
     @commands.command(aliases=["j", "joi"])
     async def join(self, ctx):
         global voice
+        global is_bot_connected_to_voice
 
         channel = ctx.message.author.voice.channel
         voice = get(self.bot.voice_clients, guild=ctx.guild)

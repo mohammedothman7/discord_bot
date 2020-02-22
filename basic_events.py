@@ -3,7 +3,9 @@
 import discord
 from discord.ext import commands
 from discord.utils import get
+from database import  collection
 from pymongo import MongoClient
+import pymongo
 import datetime
 
 default_role = "Member"
@@ -19,7 +21,6 @@ class BasicEvents(commands.Cog):
     async def on_ready(self):
         await self.bot.change_presence(status=discord.Status.online, activity=discord.Game("Ready"))
         print("Bot is online")
-        print(f"Online")
 
 
 
@@ -41,6 +42,9 @@ class BasicEvents(commands.Cog):
         role = get(member.guild.roles, name="Member")
         await member.add_roles(role, reason=None, atomic=True)
         print(f"Gave {member.name} the {role} role")
+        post = {"_id": member.id, "name": member.name, "Joined": datetime.datetime.today()}
+        collection.insert_one(post)
+
 
 
 def setup(bot):

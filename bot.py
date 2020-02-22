@@ -1,13 +1,12 @@
 # A discord bot created by Moe#6306
 
-import discord
 from discord.ext import commands
-from pymongo import MongoClient
 
 TOKEN = open("BOT_TOKEN", "r").readline()
 
 bot = commands.Bot(command_prefix='-')
-client = MongoClient()
+
+
 
 extensions = {'basic_commands', 'basic_events', 'music_commands', 'mod_commands'}
 players = {}

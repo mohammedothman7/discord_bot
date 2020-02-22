@@ -25,6 +25,9 @@ class BasicCommands(commands.Cog):
         except Exception:
             await ctx.send("Failed to change default role")
 
+    @commands.command(aliases=["h", "?", "commands", "command"])
+    async def _help(ctx):
+        await ctx.send(f"To use a command type  -   before the command\nList of commands:\n-ping\n-8ball\n-clear")
 
 
 def setup(bot):

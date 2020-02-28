@@ -8,7 +8,7 @@ from discord.utils import get
 import youtube_dl
 
 queues = {}
-
+is_bot_connected_to_voice = False
 
 class MusicCommands(commands.Cog):
     def __init__(self, bot):
@@ -17,7 +17,6 @@ class MusicCommands(commands.Cog):
     @commands.command(aliases=["j", "joi"])
     async def join(self, ctx):
         global voice
-        global is_bot_connected_to_voice
 
         channel = ctx.message.author.voice.channel
         voice = get(self.bot.voice_clients, guild=ctx.guild)
@@ -48,7 +47,7 @@ class MusicCommands(commands.Cog):
     @commands.command()
     async def play(self, ctx, url: str):
         if not is_bot_connected_to_voice:
-            await MusicCommands.join(ctx)
+            await MusicCommands.join(self, ctx)
 
         def check_queue():
             Queue_infile = os.path.isdir("./Queue")

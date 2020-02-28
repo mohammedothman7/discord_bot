@@ -1,8 +1,8 @@
 # A discord bot created by Moe#6306
 
 from discord.ext import commands
+from bot_token import BOT_TOKEN
 
-TOKEN = open("BOT_TOKEN", "r").readline()
 
 bot = commands.Bot(command_prefix='-')
 
@@ -59,4 +59,4 @@ if __name__ == '__main__':
             print(f"{extension} could not be loaded. {error}")
 
 
-bot.run(TOKEN)
+bot.run(BOT_TOKEN)

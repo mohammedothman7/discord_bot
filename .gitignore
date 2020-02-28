@@ -1,6 +1,6 @@
 venv/
-BOT_TOKEN
+bot_token.py
 song.mp3
-.idea
-__pycache__
+.idea/
+__pycache__/
 .vscode

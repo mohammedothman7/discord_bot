@@ -5,6 +5,7 @@ from bot_token import BOT_TOKEN
 
 
 bot = commands.Bot(command_prefix='-')
+bot.remove_command('help')
 
 
 

@@ -2,6 +2,10 @@
 
 import discord
 from discord.ext import commands
+from database import collection
+from datetime import datetime, timedelta
+
+
 
 class ModCommands(commands.Cog):
     def __init__(self, bot):
@@ -21,9 +25,11 @@ class ModCommands(commands.Cog):
 
     @commands.command(aliases=["ban"])
     @commands.has_permissions(ban_members=True)
-    async def permban(self, ctx, member: discord.Member, *, reason=None, delete_message_days=1):
-        await self.member.ban(reason=reason, delete_message_days=delete_message_days)
+    async def permban(self, ctx, member: discord.Member, day, *, reason=None, delete_message_days=1):
+        await member.ban(reason=reason, delete_message_days=delete_message_days)
         print(f"{member} has been banned from the server. {reason}")
+        post = {"_id": member.id, "banned til": datetime.utcnow() + timedelta(days=day)}
+
 
     @commands.command()
     @commands.has_permissions(ban_members=True)
@@ -47,6 +53,30 @@ class ModCommands(commands.Cog):
     async def clear(self, ctx, amount=5):
         await ctx.channel.purge(limit=amount)
         print(f"Removed {amount} messages from {ctx.channel.name}")
+
+
+    @commands.command()
+    @commands.has_permissions(administrator=True)
+    async def update_users_db(self, ctx):
+
+        for guild in self.bot.guilds:
+            for member in guild.members:
+                print(f"{member.id}")
+                if collection.find_one({ "_id": member.id}):
+                    print("Already in db")
+                else:
+                    post = {"_id": member.id, "name": member.name, "Joined": datetime.utcnow()}
+                    collection.insert_one(post)
+                    print(f"Added {member.name} to the db")
+
+
+
+
+
+
+
+
+
 
 def setup(bot):
     bot.add_cog(ModCommands(bot))

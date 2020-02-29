@@ -11,8 +11,9 @@ queues = {}
 is_bot_connected_to_voice = False
 
 class MusicCommands(commands.Cog):
-    def __init__(self, bot):
+    def __init__(self, bot, is_connected = False):
         self.bot = bot
+        self.is_connected = is_connected
 
     @commands.command(aliases=["j", "joi"])
     async def join(self, ctx):
@@ -26,7 +27,7 @@ class MusicCommands(commands.Cog):
         else:
             voice = await channel.connect()
             print(f"The bot has connected to {channel}\n")
-            is_bot_connected_to_voice = True
+            self.is_connected = True
             print(is_bot_connected_to_voice)
             await ctx.send(f"Joined {channel}")
 
@@ -39,14 +40,14 @@ class MusicCommands(commands.Cog):
             await voice.disconnect()
             print(f"The bot has left the {channel} channel")
             await ctx.send(f"Left {channel}")
-            is_bot_connected_to_voice = False
+            self.is_connected = False
         else:
             print(f"Not in a voice channel")
             await ctx.send("Not in a voice channel")
 
     @commands.command()
     async def play(self, ctx, url: str):
-        if not is_bot_connected_to_voice:
+        if not self.is_connected:
             await MusicCommands.join(self, ctx)
 
         def check_queue():

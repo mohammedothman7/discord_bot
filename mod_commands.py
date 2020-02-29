@@ -70,6 +70,22 @@ class ModCommands(commands.Cog):
                     print(f"Added {member.name} to the db")
 
 
+    @commands.command()
+    @commands.has_permissions(ban_members=True)
+    async def mod_help(self, ctx):
+        author = ctx.message.author
+
+        embed = discord.Embed(color=discord.Color.blue(), title='MoBot - Commands and description',
+                              description='A bot created by Moe#6306')
+
+
+        embed.add_field(name='-kick', value='{Player name} ', inline=False)
+        embed.add_field(name='-ban', value='{Player name} ', inline=False)
+        embed.add_field(name='-unban', value='{Player name} ', inline=False)
+        embed.add_field(name='-clear', value='{Amount of lines to clear} ', inline=False)
+
+        await ctx.send(author,embed=embed)
+
 
 
 

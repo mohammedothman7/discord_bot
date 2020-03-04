@@ -2,10 +2,11 @@
 
 import discord
 from discord.ext import commands
-from database import collection
+from database import db
 from datetime import datetime, timedelta
 
-
+banned_users = db["banned_users"]
+collection = db['users']
 
 class ModCommands(commands.Cog):
     def __init__(self, bot):

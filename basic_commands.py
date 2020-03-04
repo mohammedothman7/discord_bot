@@ -30,6 +30,7 @@ class BasicCommands(commands.Cog):
         author = ctx.message.author
 
         embed = discord.Embed(color= discord.Color.blue(), title='MoBot - Commands and description', description='A bot created by Moe#6306')
+        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/677957812965343266/683432710471286788/MOE.jpg')
 
 
         embed.add_field(name='-ping', value='Returns Pong!', inline=False)

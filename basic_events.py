@@ -3,12 +3,14 @@
 import discord
 from discord.ext import commands
 from discord.utils import get
-from database import  collection
+from database import  db
 from pymongo import MongoClient
 import pymongo
 import datetime
 
 default_role = "Member"
+collection = db["users"]
+deleted_messages = db["deleted_messages"]
 
 class BasicEvents(commands.Cog):
 
@@ -26,7 +28,9 @@ class BasicEvents(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message_delete(self, message):
-        print("The message " + str(message.message_id) + " has been deleted")
+        print("The message " + str(message.id) + " has been deleted")
+        post = {"_id": message.id, "author": message.author.name, "author id": message.author.id, "message": message.content, "created at": message.created_at, "deleted at": datetime.datetime.utcnow()}
+        deleted_messages.insert_one(post)
 
 
     @commands.Cog.listener()
@@ -44,6 +48,16 @@ class BasicEvents(commands.Cog):
         print(f"Gave {member.name} the {role} role")
         post = {"_id": member.id, "name": member.name, "Joined": datetime.datetime.today()}
         collection.insert_one(post)
+
+
+    @commands.Cog.listener()
+    async def on_member_remove(self, member):
+        try:
+            collection.remove({"_id": member.id})
+            print(f"{member.name} has been deleted from the database")
+        except Exception:
+            print(f"Could not remove {member.name} from database")
+
 
 
 

@@ -5,7 +5,7 @@ from discord.ext import commands
 from database import db
 from datetime import datetime, timedelta
 
-banned_users = db["banned_users"]
+banned_users_db = db["banned_users"]
 collection = db['users']
 
 class ModCommands(commands.Cog):
@@ -26,10 +26,12 @@ class ModCommands(commands.Cog):
 
     @commands.command(aliases=["ban"])
     @commands.has_permissions(ban_members=True)
-    async def permban(self, ctx, member: discord.Member, day, *, reason=None, delete_message_days=1):
+    async def permban(self, ctx, member: discord.Member, *, reason=None, delete_message_days=1):
         await member.ban(reason=reason, delete_message_days=delete_message_days)
-        print(f"{member} has been banned from the server. {reason}")
-        post = {"_id": member.id, "banned til": datetime.utcnow() + timedelta(days=day)}
+        print(f"{member} has been banned from the server. Reason = {reason}")
+        await  ctx.send(f"{member} has been banned from the server.")
+        post = {"_id": member.id, "name": member.name, "banned til": datetime.utcnow(), "reason": reason}
+        banned_users_db.insert_one(post)
 
 
     @commands.command()
@@ -41,10 +43,14 @@ class ModCommands(commands.Cog):
         for ban_entry in banned_users:
             user = ban_entry.user
 
-            if (self.user.name, self.user.discriminator) == (member_name, member_discriminator):
+            if (user.name, user.discriminator) == (member_name, member_discriminator):
                 await ctx.guild.unban(user)
+                print(f"User ID {user.id}")
+                banned_users_db.remove({"_id": user.id})
                 await ctx.send(f"{user} has been unbanned")
+                print(f"{user} has been unbanned")
                 return
+
 
         await ctx.send("Could not find banned user with given name")
         return False

@@ -46,19 +46,10 @@ class BasicEvents(commands.Cog):
         role = get(member.guild.roles, name="Member")
         await member.add_roles(role, reason=None, atomic=True)
         print(f"Gave {member.name} the {role} role")
-        post = {"_id": member.id, "name": member.name, "Joined": datetime.datetime.today()}
-        collection.insert_one(post)
 
-
-    @commands.Cog.listener()
-    async def on_member_remove(self, member):
-        try:
-            collection.remove({"_id": member.id})
-            print(f"{member.name} has been deleted from the database")
-        except Exception:
-            print(f"Could not remove {member.name} from database")
-
-
+        if collection.find_one({"_id": member.id}) is None:
+            post = {"_id": member.id, "name": member.name, "Joined": datetime.datetime.today(), "Bans": 0, "Warnings": 0, "Mutes": 0 }
+            collection.insert_one(post)
 
 
 def setup(bot):

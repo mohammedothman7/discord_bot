@@ -1,1 +1,2 @@
-# discord_bot created by Moe
+# discord_bot created by Mohammed
+

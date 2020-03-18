@@ -10,8 +10,9 @@ import youtube_dl
 queues = {}
 is_bot_connected_to_voice = False
 
+
 class MusicCommands(commands.Cog):
-    def __init__(self, bot, is_connected = False):
+    def __init__(self, bot, is_connected=False):
         self.bot = bot
         self.is_connected = is_connected
 
@@ -95,7 +96,8 @@ class MusicCommands(commands.Cog):
                 queues.clear()
                 print("Removed old song file")
         except PermissionError:
-            await MusicCommands.queue(self, ctx, url) # If song is being played then automatically add the new requested song to the queue
+            await MusicCommands.queue(self, ctx,
+                                      url)  # If song is being played then automatically add the new requested song to the queue
             print("Trying to delete song file, but it's being played")
             return
 
@@ -182,8 +184,6 @@ class MusicCommands(commands.Cog):
             print("No music playing failed to stop")
             await ctx.send("No music playing failed to stop")
 
-
-
     @commands.command(pass_context=True, aliases=['q', 'que'])
     async def queue(self, ctx, url: str):
         Queue_infile = os.path.isdir("./Queue")
@@ -245,6 +245,7 @@ class MusicCommands(commands.Cog):
         else:
             print("No music playing")
             await ctx.send("No music playing failed")
+
 
 def setup(bot):
     bot.add_cog(MusicCommands(bot))

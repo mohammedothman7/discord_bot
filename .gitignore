@@ -1,5 +1,5 @@
 venv/
-bot_token.py
+bot_settings.py
 song.mp3
 .idea/
 __pycache__/

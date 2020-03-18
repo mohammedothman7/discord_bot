@@ -1,18 +1,13 @@
 # A discord bot created by Moe#6306
 
 from discord.ext import commands
-from bot_token import BOT_TOKEN
-
+from bot_settings import BOT_TOKEN
 
 bot = commands.Bot(command_prefix='-')
 bot.remove_command('help')
 
-
-
 extensions = {'basic_commands', 'basic_events', 'music_commands', 'mod_commands', 'bot_tasks'}
 players = {}
-
-
 
 
 @bot.command()
@@ -58,6 +53,5 @@ if __name__ == '__main__':
             bot.load_extension(extension)
         except Exception as error:
             print(f"{extension} could not be loaded. {error}")
-
 
 bot.run(BOT_TOKEN)

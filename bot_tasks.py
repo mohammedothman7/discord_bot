@@ -15,7 +15,7 @@ class BotTasks(commands.Cog):
 
     @tasks.loop(minutes=10)
     async def auto(self):
-        print(f"Running task")
+        print(f"Running auto task")
         now = datetime.utcnow()
         guild = self.bot.get_guild(677957812965343262)
 
@@ -40,6 +40,8 @@ class BotTasks(commands.Cog):
                 post = {"USER ID": user.id, "TYPE:": 'MUTED', "NAME": user.name + '#' + user.discriminator,
                         "UNMUTED AT": datetime.utcnow()}
                 logs_db.insert_one(post)
+
+        print("Auto task finished")
 
     @auto.before_loop
     async def before_auto_unban(self):

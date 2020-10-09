@@ -6,7 +6,7 @@ from bot_settings import BOT_TOKEN
 bot = commands.Bot(command_prefix='-')
 bot.remove_command('help')
 
-extensions = {'basic_commands', 'basic_events', 'music_commands', 'mod_commands', 'bot_tasks'}
+extensions = {'basic_commands', 'basic_events', 'mod_commands', 'bot_tasks'}
 players = {}
 
 
